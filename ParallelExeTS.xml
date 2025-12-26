@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Suite">
+  <test thread-count="5" parallel="tests" name="Test_Leads">
+    <classes>
+      <class name="leads.LeadsmoduleClass"/>
+     </classes>
+  </test> <!-- Test -->
+  
+  <test thread-count="5" parallel="tests" name="Test_Opp">
+    <classes>
+      <class name="opportunities.CreatingOpportWithMandatoryTest"/>
+    </classes>
+  </test> <!-- Test -->
+      
+ <test thread-count="5" parallel="tests" name="Test_CP">
+    <classes>
+      <class name="calender.AddingAnEventinaDayTest"/>
+      <class name="product.AddingProductTest"/>
+    </classes>
+  </test> <!-- Test -->
+      
+ <test thread-count="5" parallel="tests" name="Test_Org">
+    <classes>
+      <class name="organization.OrganizationModuleClass"/>
+    </classes>
+  </test> <!-- Test -->
+      
+ <test thread-count="5" parallel="tests" name="Test_Con">
+    <classes>
+      <class name="contacts.ContactsModuleClass"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
